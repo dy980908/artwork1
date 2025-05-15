@@ -307,7 +307,7 @@ header {
 .m_img{
     display: none;
 }
-@media (max-width: 1319px) {
+@media (max-width: 1329px) {
   #wrapper {
     width: 95%;
     display: flex;
@@ -320,9 +320,29 @@ header {
     width: 100%;
   }
   .product-info{
-    width: 40%;
+    width: 50%;
     padding: 20px;
   }
+    .product-info h1 {
+    font-size: 21px;
+    margin-bottom: 10px;
+}
+.product-info h2 {
+    font-size: 19px;
+}
+.price p{
+    font-size: 18px;
+    padding-top: 5px;
+    margin-right: 30px;
+}
+.price h3{
+    font-size: 15px;
+    padding-top: 5px;
+}
+.price h1{
+    font-size: 20px;
+}
+  
 }
 @media (max-width: 1024px) {
   #wrapper {
@@ -338,15 +358,34 @@ header {
     max-width: 100%;
   }
   .product-info {
-    width: 100%;
-    height: auto;
-    position: relative;
-    top: auto;
+    width: 70%;
     padding: 30px 20px;
   }
    .product-info{
     margin-top: 80px;
    }
+   .product-info h1 {
+    font-size: 21px;
+    margin-bottom: 10px;
+}
+.product-info h2 {
+    font-size: 19px;
+}
+.price p{
+    font-size: 18px;
+    padding-top: 5px;
+    margin-right: 30px;
+}
+.price h3{
+    font-size: 15px;
+    padding-top: 5px;
+}
+.price h1{
+    font-size: 20px;
+}
+.top{
+  right: 1px;
+}
 }
 @media (max-width: 768px) {
     header {
