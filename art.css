@@ -307,37 +307,12 @@ header {
 .m_img{
     display: none;
 }
+.m_img img {
+  transition: box-shadow 0.3s ease;
+}
 
-.m_img::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: -75%;
-  width: 50%;
-  height: 100%;
-  background: linear-gradient(
-    120deg,
-    rgba(255, 255, 255, 0.027) 0%,
-    rgba(255, 255, 255, 0.123) 50%,
-    rgba(255, 255, 255, 0.1) 100%
-  );
-  transform: skewX(-20deg);
-  transition: left 0.6s ease;
-  pointer-events: none;
-}
-.m_img:hover::before {
-  left: 125%;
-}
-@media screen and (max-width: 1400px){
-  #About_wrap {
-    min-height: 800px;
-  }
-  #About_box h3{
-    font-size: 14px;
-  }
-  .profile {
-    margin-right: 60px;
-  }
+.m_img:hover img {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.281);
 }
 @media (max-width: 1329px) {
   #wrapper {
