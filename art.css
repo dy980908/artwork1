@@ -338,12 +338,6 @@ header {
 .m_img:hover img {
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.281);
 }
-/* @media (max-width: 1920px) {
-  .top {
-    bottom: 20px;
-    top: auto;
-  }
-} */
 @media (max-width: 1329px) {
   #wrapper {
     width: 95%;
@@ -354,11 +348,11 @@ header {
     width: 100%;
   }
   .image-section{
-    width: 100%;
+    width: 90%;
   }
   .product-info{
-    width: 50%;
-    padding: 20px;
+    width: 100%;
+    padding: 20px 0 0 0;
   }
     .product-info h1 {
     font-size: 21px;
@@ -379,18 +373,35 @@ header {
 .price h1{
     font-size: 20px;
 }
-  
+}
+@media (max-width: 1244px) {
+  #wrapper {
+    width: 95%;
+  }
+  .container{
+    width: 60%;
+  }
+  .image-section{
+    width: 100%;
+  }
+  .product-info{
+    width: 100%;
+    margin-left: 30px;
+    padding: 20px 0 0 0;
+  }
 }
 @media (max-width: 1024px) {
   #wrapper {
-    padding: 0 20px;
+    width: 100%;
   }
   header{
     text-align: center;
     justify-content: center;
   align-items: center;     
   }
-
+   .container{
+    width: 70%;
+  }
   .image-section {
     width: 100%;
     text-align: center;
@@ -402,6 +413,7 @@ header {
   .product-info {
     width: 70%;
     padding: 0 20px;
+    margin-left: 0;
   }
    .product-info h1 {
     font-size: 21px;
@@ -444,7 +456,6 @@ header {
     height: auto;
     display: block;
   }
-
   #wrapper {
     flex-direction: column;
   }
@@ -466,7 +477,11 @@ header {
     padding: 30px 20px;
     order: -1;
   }
+    .container{
+    width: 100%;
+  }
   .image-section {
+    width: 100%; 
     padding-top: 0;
     order: 1;
   }
