@@ -15,26 +15,24 @@
     </div>
   </header>
   <!-- header e -->
-    <div class="m_img">
-      <img src="./images/artimg1.png" alt="">
-    </div>
+  <div class="m_img">
+    <img src="./images/artimg1.png" alt="">
+  </div>
   <div id="wrapper">
-      <div class="container">
-        <div class="image-section">
-          <img src="./images/art1.jpg" alt="">
-          <img src="./images/art2.jpg" alt="">
-          <img src="./images/art3.jpg" alt="">
-          <img src="./images/art4.jpg" alt="">
-        </div>
-        <!-- 상세페이지 e -->
+    <div class="container">
+      <div class="image-section">
+        <img src="./images/art1.png" alt="">
+        <img src="./images/art2.png" alt="">
       </div>
+      <!-- 상세페이지 e -->
+    </div>
     <!-- 상세페이지 e -->
 
     <div class="product-info">
-<div class="actions">
-  <span class="heart" id="heart">♡</span>
-  <button class="copy-btn" id="copy-btn" title="복사하기">⧉</button>
-</div>
+      <div class="actions">
+        <span class="heart" id="heart">♡</span>
+        <button class="copy-btn" id="copy-btn" title="복사하기">⧉</button>
+      </div>
       <h1>아크네 티트리 데일리 바디 워시 500ml</h1>
       <h2>Tea Tree Acne Daily Wash 500ml</h2>
       <ul class="md">
@@ -42,8 +40,10 @@
         <li>MD</li>
       </ul>
       <div class="coupon"><a href="javascript:return false;">쿠폰받기 ⤓</a></div>
-      <div class="price"><p>42,000원</p>
-        <br><h3>쿠폰사용시</h3>
+      <div class="price">
+        <p>42,000원</p>
+        <br>
+        <h3>쿠폰사용시</h3>
         <h1>40,000원</h1>
       </div>
       <div class="quantity-box">
@@ -56,10 +56,10 @@
         <button class="cart-btn">장바구니</button>
       </div>
       <div class="top_wrap">
-      <ul class="top">
-  <li><a href="#wrapper">Top</a></li>
-</ul>
-</div>
+        <ul class="top">
+          <li><a href="#wrapper">Top</a></li>
+        </ul>
+      </div>
     </div>
     <!-- 오른쪽 e -->
   </div>
@@ -71,26 +71,26 @@
     </div>
   </div>
 
-   <script src="https://code.jquery.com/jquery-3.7.1.js"
-        integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+    crossorigin="anonymous"></script>
 
-    <script>
-        $(function () {
-            $('a[href*="#"]:not([href="#"])').click(function () {
-                if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
-                    var target = $(this.hash);
-                    target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-                    if (target.length) {
-                        $('html, body').animate({
-                            scrollTop: target.offset().top
-                        }, 500);//움직이는 시간 조정
-                        return false;
-                    }
-                }
-            });
-        });
-    </script>
-    <!--이동시 부드럽게 이동-->
+  <script>
+    $(function () {
+      $('a[href*="#"]:not([href="#"])').click(function () {
+        if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+          var target = $(this.hash);
+          target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+          if (target.length) {
+            $('html, body').animate({
+              scrollTop: target.offset().top
+            }, 500);//움직이는 시간 조정
+            return false;
+          }
+        }
+      });
+    });
+  </script>
+  <!--이동시 부드럽게 이동-->
 
   <script>
     const minus = document.getElementById('minus');
@@ -139,5 +139,5 @@
   </script>
 
 </body>
-
+ j
 </html>
