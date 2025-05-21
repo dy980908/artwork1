@@ -23,38 +23,77 @@ body {
 }
 /* 기본세팅 e */
 header {
-   width: 100%;
+  width: 100%;
   height: 120px;
   background-color: rgba(255, 255, 255, 0.74);
-  display: flex;
-  justify-content: center;
-  align-items: center;
   border-bottom: 1px solid #3C3020;
   top: 0;
   z-index: 1000;
+  position: relative;
+  box-sizing: border-box;
 }
-.logo{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: auto;
-}
-.logo a{
-  display: block;
-  width: 100%;
-  max-width: 200px;
+.header-inner {
+  max-width: 1320px;
   margin: 0 auto;
-    transition: opacity 0.8s ease, transform 0.8s ease;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
 }
-.logo a img{
+.logo {
+  display: flex;
+  align-items: center;
+}
+.logo h1 a {
+  display: block;
+  max-width: 180px;
+}
+.logo img {
   width: 100%;
   height: auto;
   display: block;
+  transition: opacity 0.8s ease, transform 0.8s ease;
 }
-.logo a:hover{
-    opacity: 70%;
+.logo a:hover {
+  opacity: 0.7;
 }
-/* header */
+.gnb ul {
+  display: flex;
+  gap: 30px;
+  list-style: none;
+}
+.gnb ul li a {
+  text-decoration: none;
+  color: #3C3020;
+  font-weight: 500;
+  font-size: 17px;
+  padding: 50px 10px;
+  position: relative;
+}
+.gnb ul li a:hover::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background-color: #3C3020;
+}
+.header-icons {
+  display: flex;
+  gap: 20px;
+}
+.header-icons a img {
+  width: 24px;
+  height: 24px;
+  display: block;
+  transition: opacity 0.3s;
+}
+.header-icons a:hover img {
+  opacity: 0.6;
+}
+/* header e */
 #wrapper {
   display: flex;
   flex-wrap: wrap;
@@ -193,7 +232,7 @@ header {
 }
 .md li:nth-child(2){
     border: 1px solid #304135;
-    background-color: #fff;
+    background-color: #ffffff6e;
     color:  #304135;
 }
 .coupon{
@@ -251,7 +290,7 @@ header {
     height: 32px;
     font-size: 20px;
     border: 1px solid #304135;
-    background-color: #fff;
+     background-color: #ffffff6e;
     border-radius: 4px;
     cursor: pointer;
     color: #304135;
@@ -286,7 +325,7 @@ header {
 }
 .cart-btn {
     border: 1px solid #304135;
-    background: none;
+    background-color: #ffffff6e;
     color: #304135;
 }
 .cart-btn:hover {
@@ -438,23 +477,65 @@ header {
   right: 1px;
 }
 }
-@media (max-width: 768px) {
-    header {
-    position: relative !important;
-    top: auto;
-    text-align: center;
-    justify-content: center;
-  align-items: center;  
- }
-  .logo {
-    max-width: 180px;
-    width: 100%;
-    margin: 0 auto;
+@media screen and (max-width: 936px) {
+  .gnb ul li a {
+  font-size: 15px;
+  padding: 50px 7px;
+}
+}
+@media screen and (max-width: 880px) {
+  .gnb ul {
+    gap: 20px;
   }
-  .logo img {
+  .gnb ul li a {
+  font-size: 15px;
+  padding: 52px 7px;
+}
+}
+@media screen and (max-width: 818px) {
+  .logo a {
+    width: 150px;
+  }
+  .logo a img{
     width: 100%;
-    height: auto;
-    display: block;
+  }
+  .gnb ul {
+    gap: 20px;
+  }
+  .gnb ul li a {
+  font-size: 15px;
+  padding: 50px 7px;
+}
+  .logo h1 a {
+    max-width: 150px;
+  }
+}
+@media (max-width: 781px) {
+    .gnb ul li a {
+  font-size: 13px;
+  padding: 52px 5px;
+}
+}
+@media (max-width: 768px) {
+   .gnb {
+    display: none;
+  }
+  .header-inner {
+    justify-content: center;
+    position: relative;
+  }
+  .logo {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .header-icons {
+    position: absolute;
+    right: 20px;
+  }
+  .header-icons a img {
+    width: 22px;
+    height: 22px;
   }
   #wrapper {
     flex-direction: column;
@@ -503,17 +584,45 @@ header {
     width: 100%;
   }
 }
+@media screen and (max-width: 767px){
+  header {
+    height: 80px;
+    padding: 0 10px;
+  }
+  .logo a {
+    max-width: 130px;
+  }
+
+}
+@media screen and (max-width: 480px) {
+  header {
+    height: 90px;
+  }
+  .logo h1 a {
+    max-width: 130px;
+  }
+  .header-icons {
+    gap: 15px;
+  }
+}
+@media screen and (max-width: 440px) {
+  .header-inner {
+    justify-content: flex-start;
+    position: relative;
+    padding: 0;
+  }
+
+  .logo {
+    position: static;
+    transform: none;
+  }
+
+  .header-icons {
+    position: absolute;
+    right: 0;
+  }
+}
 @media (max-width: 428px) {
-    .logo {
-    max-width: 150px;
-    width: 100%;
-    margin: 0 auto;
-  }
-  .logo img {
-    width: 100%;
-    height: auto;
-    display: block;
-  }
     .heart,.copy-btn{
   font-size: 30px;
 }
@@ -544,3 +653,6 @@ header {
     font-size: 16px;
 }
 }
+
+
+
